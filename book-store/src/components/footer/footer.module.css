@@ -1,0 +1,30 @@
+.footerContainer{
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 30px;
+}
+
+.logoImage {
+    width: 150px;
+    height: 100px;
+}
+
+.logoText {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.products {
+    flex: 1;
+}
+
+.contact {
+    flex: 1;
+}

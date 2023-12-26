@@ -1,0 +1,120 @@
+.popularBook {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    width: 250px;
+    height: 330px;
+    /* height: auto; */
+    padding: 40px 5px 20px 5px;
+    background-color: #f0f0f4;
+    cursor: pointer;
+    position: relative;
+
+    animation: skeleton 1s ease infinite alternate;
+}
+
+@keyframes skeleton {
+    to {
+        opacity: 0.5;
+    }
+}
+
+.bookImage {
+    height: 200px;
+    width: 125px;
+    background-color: #dbdfe5;
+}
+
+.bookTitle {
+    background-color: #dbdfe5;
+    width: 150px;
+    height: 20px;
+    border-radius: 3px;
+}
+
+.bookAuthor {
+    margin-bottom: 20px;
+    height: 15px;
+    width: 80px;
+    background-color: #dbdfe5;
+    border-radius: 3px;
+}
+
+.addToCartButton {
+    background-color: #dbdfe5;
+    width: 60px;
+    height: 25px;
+}
+
+@media screen and (max-width: 1490px) {
+    .popularBook {
+        gap: 5px;
+        width: 225px;
+        height: 290px;
+        padding: 40px 5px 20px 5px;
+    }
+    
+    .bookImage {
+        height: 150px;
+        width: 95px;
+    }
+    
+    .bookTitle {
+        font-size: 18px;
+    }
+    
+    .bookAuthor {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 865px) {
+    .popularBook {
+        gap: 5px;
+        width: 175px;
+        height: 250px;
+        padding: 40px 5px 20px 5px;
+    }
+    
+    .bookImage {
+        height: 120px;
+        width: 75px;
+    }
+    
+    .bookTitle {
+        font-size: 17px;
+    }
+    
+    .bookAuthor {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .popularBook {
+        gap: 5px;
+        width: 150px;
+        height: 250px;
+        padding: 20px 5px 20px 5px;
+    }
+    
+    .popularTicket {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .bookImage {
+        height: 128px;
+        width: 80px;
+    }
+    
+    .bookTitle {
+        width: 100px;
+        height: 15px;
+    }
+
+    .bookAuthor {
+        margin-bottom: 10px;
+    }    
+}

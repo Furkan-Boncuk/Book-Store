@@ -1,0 +1,90 @@
+.shoppingCartBook {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 15px;
+    width: 700px;
+    height: 100px;
+    padding: 10px;
+    background-color: #f0f0f4;
+    cursor: pointer;
+    position: relative;
+}
+
+.productName {
+    display: flex;
+    flex-direction: column;
+}
+
+.bookImage {
+    height: 100px;
+    width: 75px;
+}
+
+.bookTitle {
+    font-size: 18px;
+    font-weight: 400;
+    overflow:hidden;
+    text-overflow: ellipsis;
+}
+
+.bookAuthor {
+    color: gray;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.bookPrice {
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.productInfo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.numberOfProductSection {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.numberOfProductContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 5px;
+    width: max-content;
+    padding: 10px 5px;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+}
+
+.productPrice {
+    flex: 1;
+}
+
+.stick {
+    font-weight: 300;
+    align-self: flex-start;
+}
+
+.numberOfProductText {
+    font-size: 18px;
+    margin: 0px 5px;
+}
+
+.numberOfProductButton {
+    background-color: transparent;
+    border: none;
+    color: #2672E3;
+    font-size: 22px;
+    cursor: pointer;
+    width: max-content;
+}
+
+.productButtonIcon {
+
+}

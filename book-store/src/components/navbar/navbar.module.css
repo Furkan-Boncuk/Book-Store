@@ -1,0 +1,60 @@
+.navbarContainer {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* padding: 0px 30px; */
+}
+
+.logoImage {
+    width: 90px;
+    height: 60px;
+}
+
+.logoText {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.searchbar {
+
+}
+
+.userSection {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    justify-self: flex-end;
+    margin-right: 20px;
+}
+
+.shoppingCart {
+    color: #2672e3;
+}
+
+.navbarIcon {
+    width: 25px;
+    height: 25px;
+}
+
+.userAccountPlaceholderImage {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+    border: 1px solid lightgray;
+}
+
+@media screen and (max-width: 1200px) {
+    .searchbar {
+        display: none;
+    }
+}

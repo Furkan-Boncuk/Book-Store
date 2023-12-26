@@ -1,0 +1,23 @@
+.searchResultsContainer {
+    margin-bottom: 100px;
+}
+
+.resultList {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.notFound {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.searchResultsTitle {
+    color: #1454b5;
+    margin: 20px 0px;
+    font-size: 20px;
+
+}
