@@ -1,0 +1,115 @@
+.bookDetailContainer {
+   margin: 50px 0px;
+}
+
+.book {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.bookDetail {
+    display: flex;
+    flex-direction: row;
+}
+
+.bookImageContainer {
+    flex: 1;
+}
+
+.bookImage {
+    width: 250px;
+    height: auto;
+}
+
+.bookDetailContainer {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.bookTitle {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.bookSubtitle {
+    font-size: 20px;
+    color: gray;
+    display: flex;
+    gap: 10px;
+}
+
+.bookAuthor {
+    font-size: 18px;
+    color: rgb(168, 164, 164);
+    display: flex;
+    gap: 10px;
+}
+
+.detailText {
+    width: max-content;
+    border-bottom: 1px solid gray;
+}
+
+.bookPublisher {
+    display: flex;
+    gap: 10px;
+    color: gray;
+}
+
+.bookPublishDate {
+    display: flex;
+    gap: 10px;
+    color: rgb(168, 164, 164);
+}
+
+.bookPageCount {
+    display: flex;
+    gap: 10px;
+    color: gray;
+}
+
+.bookLanguage {
+    display: flex;
+    gap: 10px;
+    color: rgb(168, 164, 164);
+}
+
+.bookPrice {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.addToCartButton {
+    padding: 10px 30px;
+    background-color: #0d4a93;
+    color: whitesmoke;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+}
+
+.bookMoreDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.bookMoreDetailsTitle {
+    font-size: 20px;
+    font-weight: 500;
+    width: max-content;
+    border-bottom: 2px solid lightgray;
+}
+
+@media screen and (max-width: 850px) {
+    .bookDetail {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+}
