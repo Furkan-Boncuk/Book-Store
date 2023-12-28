@@ -16,11 +16,13 @@ const Footer = () => {
       </div>
 
       <div className={styles.products}>
-        Our Products
+      <div className={styles.footerTitle}>Our Products</div>
+        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum delectus iure reiciendis. Quasi officiis vero soluta optio atque ut beatae!</span>
       </div>
 
       <div className={styles.contact}>
-        Contact Us
+        <div className={styles.footerTitle}>Contact Us</div>
+        <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum delectus iure reiciendis. Quasi officiis vero soluta optio atque ut beatae!</span>
       </div>
     </div>
   )
