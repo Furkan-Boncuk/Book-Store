@@ -9,7 +9,7 @@ const BookDetail = () => {
   const [book, setBook] = useState(null)
   const [isBookDataLoading, setIsBookDataLoading] = useState(false)
 
-  const {addItemToCart} = useCart()
+  const { addItemToCart } = useCart()
 
   const { id } = useParams()
 
@@ -18,10 +18,8 @@ const BookDetail = () => {
       setIsBookDataLoading(true)
       try {
         const bookData = await getBookById(id)
-        console.log(bookData)
         setBook(bookData)
         setIsBookDataLoading(false)
-        console.log(book)
       } catch (error) {
         console.error(error)
       }
@@ -85,7 +83,7 @@ const BookDetail = () => {
                 <button
                   className={styles.addToCartButton}
                   onClick={handleAddToCart}
-                  >
+                >
                   <FontAwesomeIcon className={styles.cartIcon} icon={faCartPlus} />
                   Add To Cart
                 </button>
@@ -99,8 +97,20 @@ const BookDetail = () => {
                 className={styles.bookDescription}>
               </div>
               <div className={styles.bookCategories}>
-                <div className={styles.detailText}>Categories </div>
-                {book?.volumeInfo?.categories?.length > 0 ? book?.volumeInfo?.categories.map((category) => (<ul><li>{category}</li></ul>)) : book?.volumeInfo?.categories ? book?.volumeInfo?.categories : "-"}
+                <div className={styles.detailText}>Categories</div>
+                {book?.volumeInfo?.categories?.length > 0 
+                ? 
+                (
+                  <ul>
+                    {book?.volumeInfo?.categories.map((category, index) => (
+                      <li key={index}>{category}</li>
+                    ))}
+                  </ul>
+                ) 
+                : 
+                (
+                  <span>-</span>
+                )}
               </div>
             </div>
           </div>
@@ -116,8 +126,6 @@ export const getBookById = async (id) => {
     if (!response.ok) throw new Error()
 
     const data = await response.json()
-
-    console.log(data)
 
     return data
 
