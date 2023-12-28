@@ -11,6 +11,7 @@ import BookDetail from "../src/pages/bookDetail/BookDetail"
 import ShoppingCart from "../src/pages/shoppingCart/ShoppingCart"
 import { useState } from 'react';
 import { CartProvider } from './context/CartContext';
+import Payment from './pages/payment/Payment';
 
 function App() {
   const [searchTerm, setSearchTerm] = useState("")
@@ -28,6 +29,7 @@ function App() {
           <Route path="/" element={<Homepage searchTerm={searchTerm} />} />
           <Route path="/detail/:id" element={<BookDetail />} />
           <Route path="/cart" element={<ShoppingCart />} />
+          <Route path='/payment' element={<Payment/>} />
         </Routes>
         <Footer />
       </CartProvider>
