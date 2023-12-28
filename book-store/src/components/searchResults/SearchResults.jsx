@@ -16,7 +16,6 @@ const SearchResults = ({searchTerm, }) => {
             const result = await getBooksBySearchTerm(searchTerm)
             setSearchResults(result)
             setIsResultsLoading(false)
-            console.log(result)
           } catch(error) {
             console.error(error)
           }
