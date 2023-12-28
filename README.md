@@ -61,6 +61,6 @@ Gerekli adımları uyguladıktan sonra http://localhost:3000 adresine giderek pr
 - Arama çubuğu ile kitapları başlığa veya yazar adına göre arama yapma.
 - Verilerin yüklenmesi sırasında animasyonlu yükleme ekranları.
 - Responsive tasarım ile farklı cihazlara uyumluluk.
-
-
+- Ödeme sayfasında form validasyonları işlenmiştir.
+- Context API ile state yönetimi yapılarak alışveriş sepeti işlemleri ve bilgileri uygulama genelinde sağlanmıştır
 
