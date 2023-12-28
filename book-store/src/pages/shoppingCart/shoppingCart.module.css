@@ -1,7 +1,7 @@
 .shoppingCartContainer {
     display: flex;
     flex-direction: column;
-
+    margin-bottom: 150px;
 }
 
 .cartTitle {
@@ -78,6 +78,71 @@
     cursor: pointer;
 }
 
+.emptyCartContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 150px;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+.cartImage {
+    width: 150px;
+    height: 110px;
+}
+
+.emptyCartTitle {
+    font-size: 19px;
+}
+
+.emptyCartSubtitle {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.homepageButton {
+    background-color: #e23c3c;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1000px) {
+    .orderContainer {
+        display: flex;
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    .itemList {
+        flex: 1;
+        margin-bottom: 10px;
+    }
+
+    .orderSummaryCard {
+        align-self: center;
+        width: 75%;
+        flex: 1;
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .itemList {
+        width: 100%;
+    }
+
+    .orderSummaryCard {
+        align-self: center;
+        width: 75%;
+        flex: 1;
+        margin-bottom: 100px;
+    }
+
+}
 
 
 
