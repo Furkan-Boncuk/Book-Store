@@ -1,0 +1,218 @@
+.paymentContainer {
+    margin: 20px 0px 100px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.paymentTitle {
+    font-size: 32px;
+    font-weight: 400;
+    width: max-content;
+    border-bottom: 2px solid lightgray;
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.paymentForm {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.orderSummary {
+    flex: 1;
+}
+
+.orderSummaryCard {
+    align-self: flex-start;
+    flex: 1;
+    /* background-color: green; */
+    flex-direction: column;
+    text-align: center;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+}
+
+.cardTitle {
+    margin: 20px 0px;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.numberOfProduct {
+    margin-bottom: 10px;
+    text-align: center;
+    border-radius: 1px solid lightgray;
+}
+
+.amountContainer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.amountText {
+    border-bottom: 1px solid lightgray;
+}
+
+.amount {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.orderButton {
+    margin: 15px 0px;
+    background-color: #e32a2a;
+    border: none;
+    padding: 10px 40px;
+    align-self: center;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+}
+
+.addressTitle {
+    margin: 20px 0px 10px 0px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.addressText {
+    font-size: 16px;
+    margin: 5px 0px;
+}
+
+.addressInput {
+    padding: 10px 5px;
+    font-size: 16px;
+    font-weight: 300;
+    color: rgb(62, 59, 59);
+    border: none;
+    border: 2px solid gray;
+    border-radius: 3px;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+.defaultOption {
+    color: rgb(62, 59, 59);
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactTitle {
+    margin: 20px 0px 10px 0px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.contactText {
+    font-size: 16px;
+    margin: 5px 0px;
+}
+
+.contactInput {
+    padding: 10px 5px;
+    font-size: 16px;
+    font-weight: 300;
+    color: rgb(62, 59, 59);
+    border: none;
+    border: 2px solid gray;
+    border-radius: 3px;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+.creditCard {
+    display: flex;
+    flex-direction: column;
+}
+
+.creditCardTitle {
+    margin: 20px 0px 10px 0px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.creditCardText {
+    font-size: 16px;
+    margin: 5px 0px;
+}
+
+.creditCardInput {
+    padding: 10px 5px;
+    font-size: 16px;
+    font-weight: 300;
+    color: rgb(62, 59, 59);
+    border: none;
+    border: 2px solid gray;
+    border-radius: 3px;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+.expirationDate {
+    display: flex;
+    flex-direction: column;
+}
+
+.expirationDateTitle {
+    font-size: 16px;
+    margin: 5px 0px;
+    font-weight: 500;
+}
+
+.errorInput {
+    border: 2px solid #e32a2a;
+}
+
+.error {
+    margin: 0;
+    padding: 0;
+    color: #e32a2a;
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .formContainer {
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
