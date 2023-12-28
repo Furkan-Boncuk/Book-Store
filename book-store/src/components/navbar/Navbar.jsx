@@ -1,11 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styles from "./navbar.module.css"
 import Searchbar from "../searchbar/Searchbar"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom'
+import { useCart } from '../../context/CartContext'
 
 const Navbar = ({ onSearch }) => {
+    const { cartState, getTotalItems } = useCart()
+    const { totalItems } = cartState
+
+    useEffect(() => {
+        getTotalItems()
+    }, [cartState?.items])
+  
     return (
         <div className={styles.navbarContainer}>
             <Link to="/">
@@ -29,6 +37,9 @@ const Navbar = ({ onSearch }) => {
                 <Link to="/cart">
                     <div className={styles.shoppingCart}>
                         <FontAwesomeIcon className={styles.navbarIcon} icon={faShoppingCart} />
+                        <div className={styles.cartItemBadge}>
+                            {totalItems}
+                        </div>
                     </div>
                 </Link>
 
@@ -36,7 +47,7 @@ const Navbar = ({ onSearch }) => {
                     <img
                         className={styles.userAccountPlaceholderImage}
                         src='/UserAccountPlaceholderImage.png'
-                        alt='Profile Picture'
+                        alt='Profile'
                     />
                 </div>
             </div>
