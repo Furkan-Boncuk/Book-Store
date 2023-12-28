@@ -10,6 +10,8 @@ Her sayfada ortak bir navbar ve footer bulunmaktadır.
 
 ## Kurulum
 
+(Bilgisayarınızda boş bir klasör oluşturun ve kod editörünüzle birlikte klasörü açın. Sornrasında da terminali açın.)
+
 1. Projeyi klonlayın:
 
     ```bash
