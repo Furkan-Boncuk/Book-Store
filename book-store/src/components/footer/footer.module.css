@@ -1,6 +1,7 @@
 .footerContainer{
     display: flex;
     align-items: center;
+    gap: 20px;
 }
 
 .logo {
@@ -8,7 +9,6 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 0px 30px;
 }
 
 .logoImage {
@@ -27,4 +27,17 @@
 
 .contact {
     flex: 1;
+}
+
+.footerTitle {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 480px) {
+    .footerContainer {
+        border-top: 2px solid lightgray;
+        flex-direction: column;
+    }
 }
